@@ -8,5 +8,9 @@ import { PersonModule } from './person/person.module';
   imports: [TestModule, PersonModule],
   controllers: [AppController],
   providers: [AppService],
+  // providers: [{
+  //   provide: 'APP_GUARD',
+  //   useClass: RolesGuard,
+  // }]
 })
 export class AppModule {}
