@@ -22,7 +22,7 @@ export class PersonController {
   }
 
   @Get(':id')
-  findAll(@Param('id') id: string, @Query('name') name: string){
+  findAll(@Param('id') id: string, @Query('name') name: string) {
     return id + name;
     // return this.personService.findAll();
   }
